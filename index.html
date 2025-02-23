@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AMIRDIEZZ</title>
+    <link rel="icon" href="Media/MAD Logo White.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Logo Section -->
+    <div class="logo">
+        <a href="#"><img src="Media/MAD Logo White.png"></a>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="Media/front.PNG" class="object" data-value="5">
+        <canvas id="dotsCanvas"></canvas>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".object").forEach(function(move){
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) /500;
+                var y = (e.clientY * moving_value) /500;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
+    </script>
+
+    <!-- About Me Section -->
+    <div class="block">
+        <section class="about-me" id="about-me">
+            <h1>I AM AMIR DANIEL</h1>
+            <p>I’m a <span class="span">Security Engineer by day, Software Developer by night</span>. I maintain identity access management products but also loves diving deep into full stack development.</p>
+            <div class="scrolling-sentence">
+                <p>READY TO MAKE A DIFFERENCE? BUCKLE UP BECAUSE '<span class="span">IT'S GOING TO BE MAD</span>'</p>
+            </div>    
+        </section>
+    </div>
+
+    <!-- Career Section -->
+    <section class="career" id="career">
+        <h1>CAREER</h1>
+        <p>Want to know how I can contribute to your team? <span class="span">Download my resume</span> and let's get in touch!</p>
+        <a href="MUHAMMAD AMIR DANIEL BIN SUHAIMI_RESUME_2025.pdf" download="MUHAMMAD AMIR DANIEL BIN SUHAIMI_RESUME_2025" class="btn" target="_blank">Download Resume</a>
+        <table class="career-table">
+            <tr>
+                <td class="year">NOW</td>
+                <td>Security Engineer<br><span class="location">Adaptive Netpoleon Malaysia Sdn Bhd</span></td>
+            </tr>
+            <tr>
+                <td class="year">2024</td>
+                <td>Security Engineer Intern<br><span class="location">Adaptive Netpoleon Malaysia Sdn Bhd</span></td>
+            </tr>
+            <tr>
+                <td class="year">2021</td>
+                <td>Bachelor's Degree in Software Engineering<br><span class="location">Universiti Tun Hussein Onn Malaysia</span></td>
+            </tr>
+            <tr>
+                <td class="year">2020</td>
+                <td>Physical Science<br><span class="location">Kolej Matrikulasi Selangor</span></td>
+            </tr>
+            <tr>
+                <td class="year">2018</td>
+                <td>Pure Science<br><span class="location">Maktab Rendah Sains MARA Taiping</span></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Project Section -->
+    <div class="block">
+    <section class="project" id="project">
+        <div class="project-container">
+            <h1>PROJECT</h1>
+            <p>The development of <span class="span"><br>Kelab Golf Batu Pahat Online Shopping</span>.<br>Find out more below!</p>
+            <a href="https://github.com/amirdiezz/kgbp" class="btn" target="blank">View Repository</a>
+        </div>
+    </section>
+    </div>
+
+    <!-- My Works Section -->
+    <section class="work" id="work">
+        <h1>MY WORKS</h1>
+        <p>Did I mention I have a thing for <span class="span">photography and videography</span>? Just a little creative madness on the side.</p>
+        <table class="work-table">
+            <td><img src="Media/viet.JPEG"></td>
+            <td><img src="Media/tech.JPEG"></td>
+            <td><img src="Media/winter.JPEG"></td>
+        </table>
+    </section>
+
+    <section class="connect" id="connect">
+        <h1>LET'S CONNECT!</h1>
+        <p>Check out <span class="span">my socials</span>, stay updated on my latest projects and let's connect!</p>
+        <table class="connect-table">
+            <tr>
+                <td class="year"><i class="bi bi-linkedin"></i></td>
+                <td><a href="#connect" target="_blank">LINKEDIN</a><br><span class="location">Where I post anything related to my work or achievement</span></td>
+            </tr>
+            <tr>
+                <td class="year"><i class="bi bi-github"></i></td>
+                <td><a href="https://github.com/amirdiezz" target="_blank">GITHUB</a><br><span class="location">If I have a project, I'll probably update it here</span></td>
+            </tr>
+            <tr>
+                <td class="year"><i class="bi bi-instagram"></i></td>
+                <td><a href="https://www.instagram.com/amirdiezz/" target="_blank">INSTAGRAM</a><br><span class="location">Still finding the right picture to post more</span></td>
+            </tr>
+            <tr>
+                <td class="year"><i class="bi bi-tiktok"></i></td>
+                <td><a href="https://www.tiktok.com/@amirdiezz" target="_blank">TIKTOK</a><br><span class="location">Everything! Affiliate, hobby, videography, travel, you name it!</span></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="footer-line"></div>
+        <p>AMIRDIEZZ™ 2025. ALL RIGHTS RESERVED.</p>
+    </section>
+
+    
+
+    <script src="app.js"></script>
+
+</body>
+</html>

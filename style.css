@@ -1,0 +1,491 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: #101010;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #d0d0d0;
+    overflow-x: hidden;
+}
+.logo{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    overlay: #101010;
+}
+
+.logo img {
+    height: 10vh;
+    transition: filter 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    filter: brightness(0.5) sepia(1) hue-rotate(-50deg) saturate(5);
+}
+
+.banner{
+    background-image: url(Media/background.jpg);
+    width: 100%;
+    height: 100vh;
+    margin-top: -10vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.banner #dotsCanvas{
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.about-me{
+    margin: 10% 10% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0.5rem;
+}
+
+p {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.span {
+    color: red;
+}
+
+.scrolling-sentence {
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+.scrolling-sentence p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    animation: scroll-left 10s linear infinite;
+    font-size: 8rem;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start off the screen on the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off the screen on the left */
+    }
+}
+
+.career{
+    margin: 0 10% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #d0d0d0; 
+    color: black;
+    padding: 1rem 2rem; 
+    border-radius: 1rem; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    font-weight: normal;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: red; 
+    color: #d0d0d0;
+    font-style: italic;
+    box-shadow: 0 0 5px  red,
+                0 0 25px  red,
+                0 0 50px  red,
+                0 0 200px  red;
+}
+
+.career-table{
+    margin-top: 10%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #d0d0d0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: justify;
+    border-collapse: collapse;
+}
+
+.career-table tr{
+    transition: 0.5s ease;
+}
+
+.career-table tr:hover{
+    background-color: red;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px  red,
+    0 0 25px  red,
+    0 0 50px  red,
+    0 0 100px  red;
+}
+
+.career-table td{
+    padding: 1.5rem;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.year{
+    text-align: center;
+}
+
+.location{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.project{
+    background-image: url(Media/project.jpg);
+    width: 100%;
+    height: 100vh;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.project-container{
+    margin: 10%;
+}
+
+.work{
+    margin: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.work-table td{
+    padding: 1.5rem;
+}
+
+.work-table img{
+    width: 100%;
+    opacity: 50%;
+    transition: 0.5s ease;
+}
+
+.work-table img:hover{
+    opacity: 100%;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px  white,
+    0 0 25px  white,
+    0 0 50px  white,
+    0 0 100px  white;
+}
+
+video{
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+}
+
+.connect{
+    margin: 0 10%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem; 
+
+}
+
+.connect-table{
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #d0d0d0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.connect-table tr{
+    transition: 0.5s ease;
+}
+
+.connect-table a{
+    color: #d0d0d0;
+    text-decoration: none;
+}
+
+.connect-table tr:hover{
+    background-color: red;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px  red,
+    0 0 25px  red,
+    0 0 50px  red,
+    0 0 100px  red;
+}
+
+.connect-table td{
+    padding: 1.5rem;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.year{
+    text-align: center;
+}
+
+.location{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.footer{
+    margin: 2.5% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-line{
+    margin: 2.5%;
+    width: 100%;
+    height: 1px;
+    background-color: #d0d0d0;
+}
+
+.footer p{
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    
+}
+
+@media (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    p{
+
+        font-size: 3rem;
+    }
+
+    .btn{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .work{
+        margin: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-table {
+        display: block;
+    }
+
+    .work-table td {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .work-table img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .connect{
+        margin: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .connect-table{
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #d0d0d0;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: justify;
+        border-collapse: collapse;
+    }
+    
+    .connect-table td{
+        padding: 1rem;
+        border-bottom: 1px solid #d0d0d0;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    h1{
+        font-size: 0.8rem; 
+        text-align: center;
+    }
+
+    p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .btn{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-me{
+        margin: 10% 10% 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .career{
+        margin: 10% 10% 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .career-table{
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #d0d0d0;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    .career-table td{
+        padding: 1rem;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    
+    .year{
+        text-align: center;
+    }
+    
+    .location{
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+    .work{
+        margin: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-table {
+        display: block;
+    }
+
+    .work-table td {
+        display: block;
+        width: 80%;
+    }
+
+    .work-table img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .connect{
+        margin: 10% 10% 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .connect-table{
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #d0d0d0;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: justify;
+        border-collapse: collapse;
+    }
+    
+    .connect-table td{
+        padding: 1rem;
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+    .footer{
+        margin: 5%;
+    }
+    
+    .footer-line{
+        width: 100%;
+        height: 0.5px;
+        background-color: #d0d0d0;
+        margin: 0 auto;
+    }
+    
+    .footer p{
+        font-size: 0.5rem;
+        font-weight: normal;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        
+    }
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.7;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
