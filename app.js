@@ -61,3 +61,7 @@ window.addEventListener('resize', () => {
     }
     drawDots();
 })
+
+document.getElementById('downloadBtn').addEventListener('click', function () {
+    alert("Thanks for downloading my resume! Feel free to reach out.");
+  });
